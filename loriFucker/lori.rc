@@ -1,0 +1,164 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LORI                ICON    DISCARDABLE     "bitmap/lori.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_START_FORM DIALOG DISCARDABLE  0, 0, 164, 224
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "lori_fucking_process"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         TASK_LIST,7,18,111,143,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "ƒŒ¡¿¬»“‹",IDC_ADD_TASK_BUTTON,127,18,30,27,BS_BITMAP
+    PUSHBUTTON      "—“¿–“",IDC_START_BUTTON,7,170,30,26,BS_BITMAP
+    PUSHBUTTON      "œ¿”«¿",IDC_PAUSE_BUTTON,47,170,30,26,BS_BITMAP
+    PUSHBUTTON      "—“Œœ",IDC_STOP_BUTTON,87,170,30,26,BS_BITMAP
+    PUSHBUTTON      "¬¬≈–’",IDC_UP_TASK_BUTTON,127,57,30,27,BS_BITMAP
+    PUSHBUTTON      "¬Õ»«",IDC_DOWN_TASK_BUTTON,127,96,30,27,BS_BITMAP
+    PUSHBUTTON      "”ƒ¿À»“‹",IDC_DELETE_TASK_BUTTON,127,135,30,27,BS_BITMAP
+END
+
+IDD_TASK_CONFIGURATOR DIALOG DISCARDABLE  0, 0, 253, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "—Œ’–¿Õ»“‹",SAVE_BUTTON,190,139,50,14
+    PUSHBUTTON      "Œ“Ã≈Õ¿",CANCEL_BUTTON,123,139,50,14
+    EDITTEXT        PATCH_EDIT_BOX,17,22,218,12,ES_AUTOHSCROLL
+    GROUPBOX        "œÛÚ¸ Í Ô‡ÔÍÂ Ò Ù‡„ÏÂÌÚ‡ÏË",IDC_STATIC,7,8,240,33
+    COMBOBOX        IDC_COMBO1,7,49,116,15,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "ŒËÂÌÚ‡ˆËˇ Ë ÙÂÈÏ˚",IDC_STATIC,7,72,116,46
+    LTEXT           "Œ·˘ÂÂ ÍÓÎÎË˜ÂÒÚ‚Ó",IDC_STATIC,13,85,69,8
+    LTEXT           "œÓÔÛÒÍÓ‚",IDC_STATIC,14,97,38,8
+    COMBOBOX        COMBO_VERTICAL_FRAMES,138,49,34,124,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        COMBO_HORIZONTAL_FRAMES,192,49,34,133,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Horz",IDC_STATIC,225,52,16,8
+    LTEXT           "Vert",IDC_STATIC,173,52,14,8
+    LTEXT           "    ",TEXT_ALL_FRAMES,86,85,30,8
+    LTEXT           "    ",TEXT_ALL_OMITS,56,97,61,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_START_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_TASK_CONFIGURATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ADD_TASK_ACTIVE     BITMAP  DISCARDABLE     "bitmap\\add_active.bmp"
+IDB_ADD_TASK_PASSIVE    BITMAP  DISCARDABLE     "bitmap\\add_passive.bmp"
+IDB_DELETE_TASK_ACTIVE  BITMAP  DISCARDABLE     "bitmap\\delete_active.bmp"
+IDB_DELETE_TASK_PASSIVE BITMAP  DISCARDABLE     "bitmap\\delete_passive.bmp"
+IDB_DOWN_TASK_ACTIVE    BITMAP  DISCARDABLE     "bitmap\\down_active.bmp"
+IDB_DOWN_TASK_PASSIVE   BITMAP  DISCARDABLE     "bitmap\\down_passive.bmp"
+IDB_PAUSE_ACTIVE        BITMAP  DISCARDABLE     "bitmap\\pause_active.bmp"
+IDB_PAUSE_PASSIVE       BITMAP  DISCARDABLE     "bitmap\\pause_passive.bmp"
+IDB_START_ACTIVE        BITMAP  DISCARDABLE     "bitmap\\start_active.bmp"
+IDB_START_PASSIVE       BITMAP  DISCARDABLE     "bitmap\\start_passive.bmp"
+IDB_STOP_ACTIVE         BITMAP  DISCARDABLE     "bitmap\\stop_active.bmp"
+IDB_STOP_PASSIVE        BITMAP  DISCARDABLE     "bitmap\\stop_passive.bmp"
+IDB_UP_TASK_ACTIVE      BITMAP  DISCARDABLE     "bitmap\\up_active.bmp"
+IDB_UP_TASK_PASSIVE     BITMAP  DISCARDABLE     "bitmap\\up_passive.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
